@@ -11,7 +11,7 @@ import SwiftUI
 struct Befamily_Messenger_Description_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
