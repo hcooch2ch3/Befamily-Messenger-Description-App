@@ -12,7 +12,7 @@
 		36623831291DEDF900ED1DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36623830291DEDF900ED1DE0 /* Assets.xcassets */; };
 		36623834291DEDF900ED1DE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36623833291DEDF900ED1DE0 /* Preview Assets.xcassets */; };
 		36EE2135291F5E11009CFA6B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 36EE2134291F5E11009CFA6B /* Alamofire */; };
-		36EE2137291F5FB7009CFA6B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE2136291F5FB7009CFA6B /* Network.swift */; };
+		36EE2137291F5FB7009CFA6B /* AppStorePreviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE2136291F5FB7009CFA6B /* AppStorePreviewService.swift */; };
 		36EE2139291F911E009CFA6B /* AppStorePreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE2138291F911E009CFA6B /* AppStorePreviews.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,7 +22,7 @@
 		3662382E291DEDF700ED1DE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		36623830291DEDF900ED1DE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36623833291DEDF900ED1DE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		36EE2136291F5FB7009CFA6B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		36EE2136291F5FB7009CFA6B /* AppStorePreviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorePreviewService.swift; sourceTree = "<group>"; };
 		36EE2138291F911E009CFA6B /* AppStorePreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorePreviews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +62,7 @@
 				3662382E291DEDF700ED1DE0 /* ContentView.swift */,
 				36623830291DEDF900ED1DE0 /* Assets.xcassets */,
 				36623832291DEDF900ED1DE0 /* Preview Content */,
-				36EE2136291F5FB7009CFA6B /* Network.swift */,
+				36EE2136291F5FB7009CFA6B /* AppStorePreviewService.swift */,
 			);
 			path = "Befamily-Messenger-Description-App";
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 			files = (
 				3662382F291DEDF700ED1DE0 /* ContentView.swift in Sources */,
 				3662382D291DEDF700ED1DE0 /* Befamily_Messenger_Description_AppApp.swift in Sources */,
-				36EE2137291F5FB7009CFA6B /* Network.swift in Sources */,
+				36EE2137291F5FB7009CFA6B /* AppStorePreviewService.swift in Sources */,
 				36EE2139291F911E009CFA6B /* AppStorePreviews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
