@@ -14,6 +14,7 @@
 		36EE2135291F5E11009CFA6B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 36EE2134291F5E11009CFA6B /* Alamofire */; };
 		36EE2137291F5FB7009CFA6B /* AppStorePreviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE2136291F5FB7009CFA6B /* AppStorePreviewService.swift */; };
 		36EE2139291F911E009CFA6B /* AppStorePreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE2138291F911E009CFA6B /* AppStorePreviews.swift */; };
+		36EE213B291F9250009CFA6B /* AppStorePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE213A291F9250009CFA6B /* AppStorePreviewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		36623833291DEDF900ED1DE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		36EE2136291F5FB7009CFA6B /* AppStorePreviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorePreviewService.swift; sourceTree = "<group>"; };
 		36EE2138291F911E009CFA6B /* AppStorePreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorePreviews.swift; sourceTree = "<group>"; };
+		36EE213A291F9250009CFA6B /* AppStorePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorePreviewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				36623830291DEDF900ED1DE0 /* Assets.xcassets */,
 				36623832291DEDF900ED1DE0 /* Preview Content */,
 				36EE2136291F5FB7009CFA6B /* AppStorePreviewService.swift */,
+				36EE213A291F9250009CFA6B /* AppStorePreviewViewModel.swift */,
 			);
 			path = "Befamily-Messenger-Description-App";
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36EE213B291F9250009CFA6B /* AppStorePreviewViewModel.swift in Sources */,
 				3662382F291DEDF700ED1DE0 /* ContentView.swift in Sources */,
 				3662382D291DEDF700ED1DE0 /* Befamily_Messenger_Description_AppApp.swift in Sources */,
 				36EE2137291F5FB7009CFA6B /* AppStorePreviewService.swift in Sources */,
