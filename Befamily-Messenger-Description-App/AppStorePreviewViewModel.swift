@@ -28,6 +28,8 @@ class AppStorePreviewViewModel: ObservableObject {
     @Published var versionDescription: String = "버전 상세 설명"
     @Published var appDescription: String = "앱 상세 설명"
     @Published var previewImageURLs: [URL] = []
+    @Published var appSize: String = "0"
+    @Published var languages: String = ""
     
     init() {
         getAppStorePreviews()
@@ -65,5 +67,13 @@ class AppStorePreviewViewModel: ObservableObject {
         self.appDescription = appStorePreview.resultDescription
         self.iconImageURL = URL(string: appStorePreview.artworkUrl100)
         self.previewImageURLs = appStorePreview.screenshotUrls.compactMap { URL(string: $0) }
+        self.appSize = appStorePreview.fileSizeBytes.fileSize
+        self.languages = appStorePreview.languageCodesISO2A.map {
+            switch $0 {
+            case "EN": return "영어"
+            case "KO": return "한국어"
+            default: return "알 수 없음"
+            }
+        }.joined(separator: ", ")
     }
 }

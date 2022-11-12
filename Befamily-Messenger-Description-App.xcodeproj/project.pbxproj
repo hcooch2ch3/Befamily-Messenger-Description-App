@@ -22,6 +22,8 @@
 		36EE214A291FDD5C009CFA6B /* HorizontalSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE2149291FDD5C009CFA6B /* HorizontalSummary.swift */; };
 		36EE214C291FDDA9009CFA6B /* HorizontalPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE214B291FDDA9009CFA6B /* HorizontalPreviewImage.swift */; };
 		36EE214E292010F5009CFA6B /* CacheAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE214D292010F5009CFA6B /* CacheAsyncImage.swift */; };
+		36EE2150292026DD009CFA6B /* AppInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE214F292026DD009CFA6B /* AppInformation.swift */; };
+		36EE2154292027DB009CFA6B /* String+FileSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE2153292027DB009CFA6B /* String+FileSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		36EE2149291FDD5C009CFA6B /* HorizontalSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSummary.swift; sourceTree = "<group>"; };
 		36EE214B291FDDA9009CFA6B /* HorizontalPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPreviewImage.swift; sourceTree = "<group>"; };
 		36EE214D292010F5009CFA6B /* CacheAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAsyncImage.swift; sourceTree = "<group>"; };
+		36EE214F292026DD009CFA6B /* AppInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInformation.swift; sourceTree = "<group>"; };
+		36EE2153292027DB009CFA6B /* String+FileSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FileSize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				36EE2140291FB170009CFA6B /* String+RelativeDate.swift */,
+				36EE2153292027DB009CFA6B /* String+FileSize.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 				36EE2149291FDD5C009CFA6B /* HorizontalSummary.swift */,
 				36EE214B291FDDA9009CFA6B /* HorizontalPreviewImage.swift */,
 				36EE214D292010F5009CFA6B /* CacheAsyncImage.swift */,
+				36EE214F292026DD009CFA6B /* AppInformation.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 				36EE213B291F9250009CFA6B /* AppStorePreviewViewModel.swift in Sources */,
 				36EE2148291FDAE2009CFA6B /* AppDetailDescription.swift in Sources */,
 				36EE2143291FD61A009CFA6B /* PreviewHeader.swift in Sources */,
+				36EE2154292027DB009CFA6B /* String+FileSize.swift in Sources */,
 				36EE214C291FDDA9009CFA6B /* HorizontalPreviewImage.swift in Sources */,
 				36EE2146291FD79F009CFA6B /* NewFunctionDescription.swift in Sources */,
 				36EE214E292010F5009CFA6B /* CacheAsyncImage.swift in Sources */,
@@ -209,6 +216,7 @@
 				3662382D291DEDF700ED1DE0 /* Befamily_Messenger_Description_AppApp.swift in Sources */,
 				36EE214A291FDD5C009CFA6B /* HorizontalSummary.swift in Sources */,
 				36EE2137291F5FB7009CFA6B /* AppStorePreviewService.swift in Sources */,
+				36EE2150292026DD009CFA6B /* AppInformation.swift in Sources */,
 				36EE2141291FB170009CFA6B /* String+RelativeDate.swift in Sources */,
 				36EE2139291F911E009CFA6B /* AppStorePreviews.swift in Sources */,
 			);

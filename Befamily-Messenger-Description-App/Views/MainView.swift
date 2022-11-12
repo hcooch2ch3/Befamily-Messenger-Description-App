@@ -22,6 +22,7 @@ struct MainView: View {
                 HorizontalPreviewImage(viewModel: viewModel)
                 Divider()
                 AppDetailDescription(viewModel: viewModel)
+                AppInformation(viewModel: viewModel)
             }
             .padding()
         }
