@@ -15,6 +15,7 @@
 		36EE2137291F5FB7009CFA6B /* AppStorePreviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE2136291F5FB7009CFA6B /* AppStorePreviewService.swift */; };
 		36EE2139291F911E009CFA6B /* AppStorePreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE2138291F911E009CFA6B /* AppStorePreviews.swift */; };
 		36EE213B291F9250009CFA6B /* AppStorePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE213A291F9250009CFA6B /* AppStorePreviewViewModel.swift */; };
+		36EE2141291FB170009CFA6B /* String+RelativeDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE2140291FB170009CFA6B /* String+RelativeDate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		36EE2136291F5FB7009CFA6B /* AppStorePreviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorePreviewService.swift; sourceTree = "<group>"; };
 		36EE2138291F911E009CFA6B /* AppStorePreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorePreviews.swift; sourceTree = "<group>"; };
 		36EE213A291F9250009CFA6B /* AppStorePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorePreviewViewModel.swift; sourceTree = "<group>"; };
+		36EE2140291FB170009CFA6B /* String+RelativeDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+RelativeDate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		3662382B291DEDF700ED1DE0 /* Befamily-Messenger-Description-App */ = {
 			isa = PBXGroup;
 			children = (
+				36EE213F291FB15D009CFA6B /* Extensions */,
 				36EE213C291F964D009CFA6B /* Models */,
 				3662382C291DEDF700ED1DE0 /* Befamily_Messenger_Description_AppApp.swift */,
 				3662382E291DEDF700ED1DE0 /* ContentView.swift */,
@@ -84,6 +87,14 @@
 				36EE2138291F911E009CFA6B /* AppStorePreviews.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		36EE213F291FB15D009CFA6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				36EE2140291FB170009CFA6B /* String+RelativeDate.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 				3662382F291DEDF700ED1DE0 /* ContentView.swift in Sources */,
 				3662382D291DEDF700ED1DE0 /* Befamily_Messenger_Description_AppApp.swift in Sources */,
 				36EE2137291F5FB7009CFA6B /* AppStorePreviewService.swift in Sources */,
+				36EE2141291FB170009CFA6B /* String+RelativeDate.swift in Sources */,
 				36EE2139291F911E009CFA6B /* AppStorePreviews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
