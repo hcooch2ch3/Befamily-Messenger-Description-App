@@ -16,6 +16,7 @@ struct MainView: View {
                 PreviewHeader(viewModel: viewModel)
                 Divider()
                 HorizontalSummary(viewModel: viewModel)
+                    .padding(.horizontal, -20)
                 Divider()
                 NewFunctionDescription(viewModel: viewModel)
                 Divider()
@@ -24,7 +25,7 @@ struct MainView: View {
                 AppDetailDescription(viewModel: viewModel)
                 AppInformation(viewModel: viewModel)
             }
-            .padding()
+            .padding(20)
         }
     }
 }

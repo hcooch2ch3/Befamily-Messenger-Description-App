@@ -9,31 +9,50 @@ import SwiftUI
 
 struct HorizontalSummary: View {
     @ObservedObject var viewModel: AppStorePreviewViewModel
+    let vStackSpacing: CGFloat = 5
+    let titleFont = Font.footnote
+    let contentFont = Font.subheadline
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                VStack {
+                VStack(spacing: vStackSpacing) {
                     Text("\(viewModel.userRatingCount)개의 평가")
-                    Text("\(viewModel.averageUserRating)")
+                        .font(titleFont)
+                    Text(viewModel.averageUserRating)
+                        .font(contentFont)
                 }
-                VStack {
+                .padding(.leading, 20)
+                Divider()
+                VStack(spacing: vStackSpacing) {
                     Text("연령")
-                    Text("\(viewModel.minimumUserAge)")
+                        .font(titleFont)
+                    Text(viewModel.minimumUserAge)
+                        .font(contentFont)
                 }
-                VStack {
+                Divider()
+                VStack(spacing: vStackSpacing) {
                     Text("카테고리")
-                    Text("\(viewModel.category)")
+                        .font(titleFont)
+                    Text(viewModel.category)
+                        .font(contentFont)
                 }
-                VStack {
+                Divider()
+                VStack(spacing: vStackSpacing) {
                     Text("개발자")
-                    Text("\(viewModel.developerName)")
+                        .font(titleFont)
+                    Text(viewModel.developerName)
+                        .font(contentFont)
                 }
-                VStack {
+                Divider()
+                VStack(spacing: vStackSpacing) {
                     Text("언어")
-                    Text("\(viewModel.language)")
+                        .font(titleFont)
+                    Text(viewModel.language)
+                        .font(contentFont)
                     if viewModel.moreLanguageCount > 0 {
                         Text("+ \(viewModel.moreLanguageCount)개 언어")
+                            .font(titleFont)
                     }
                 }
             }
