@@ -21,6 +21,7 @@ struct AppDetailDescription: View {
                     lineLimit = nil
                 } label: {
                     Text("더 보기")
+                        .font(.footnote)
                 }
             }
         }

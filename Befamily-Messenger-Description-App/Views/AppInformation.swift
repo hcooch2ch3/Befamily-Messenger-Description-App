@@ -9,38 +9,60 @@ import SwiftUI
 
 struct AppInformation: View {
     @ObservedObject var viewModel: AppStorePreviewViewModel
+    let titleFont = Font.footnote
     
     var body: some View {
-        VStack {
+        VStack(spacing: 15) {
             Divider()
             HStack {
                 Text("정보")
+                    .font(.headline)
                 Spacer()
             }
-            HStack {
-                Text("제공자")
-                Spacer()
-                Text(viewModel.developerName)
+            VStack {
+                Divider()
+                HStack {
+                    Text("제공자")
+                        .font(titleFont)
+                    Spacer()
+                    Text(viewModel.developerName)
+                }
             }
-            HStack {
-                Text("크기")
-                Spacer()
-                Text(viewModel.appSize)
+            VStack {
+                Divider()
+                HStack {
+                    Text("크기")
+                        .font(titleFont)
+                    Spacer()
+                    Text(viewModel.appSize)
+                }
             }
-            HStack {
-                Text("카테고리")
-                Spacer()
-                Text(viewModel.category)
+            VStack {
+                Divider()
+                HStack {
+                    Text("카테고리")
+                        .font(titleFont)
+                    Spacer()
+                    Text(viewModel.category)
+                }
             }
-            HStack {
-                Text("언어")
-                Spacer()
-                Text(viewModel.languages)
+            VStack {
+                Divider()
+                HStack {
+                    Text("언어")
+                        .font(titleFont)
+                    Spacer()
+                    Text(viewModel.languages)
+                }
             }
-            HStack {
-                Text("연령 등급")
-                Spacer()
-                Text(viewModel.minimumUserAge)
+            VStack {
+                Divider()
+                HStack {
+                    Text("연령 등급")
+                        .font(titleFont)
+                    Spacer()
+                    Text(viewModel.minimumUserAge)
+                }
             }
         }
     }

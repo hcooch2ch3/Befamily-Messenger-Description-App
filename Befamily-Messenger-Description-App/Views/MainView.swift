@@ -12,7 +12,7 @@ struct MainView: View {
     
     var body: some View {
         ScrollView {
-            VStack {
+            VStack(spacing: 15) {
                 PreviewHeader(viewModel: viewModel)
                 Divider()
                 HorizontalSummary(viewModel: viewModel)
