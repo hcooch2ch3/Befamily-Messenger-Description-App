@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		365C85A329209A76001E600D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365C85A229209A76001E600D /* CoreDataManager.swift */; };
+		365C85A92920A1C4001E600D /* UIImageTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365C85A82920A1C4001E600D /* UIImageTransformer.swift */; };
+		365C85AB2920C765001E600D /* CacheAsyncImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365C85AA2920C765001E600D /* CacheAsyncImageViewModel.swift */; };
 		3662382D291DEDF700ED1DE0 /* Befamily_Messenger_Description_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3662382C291DEDF700ED1DE0 /* Befamily_Messenger_Description_AppApp.swift */; };
 		3662382F291DEDF700ED1DE0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3662382E291DEDF700ED1DE0 /* MainView.swift */; };
 		36623831291DEDF900ED1DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36623830291DEDF900ED1DE0 /* Assets.xcassets */; };
@@ -24,9 +27,14 @@
 		36EE214E292010F5009CFA6B /* CacheAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE214D292010F5009CFA6B /* CacheAsyncImage.swift */; };
 		36EE2150292026DD009CFA6B /* AppInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE214F292026DD009CFA6B /* AppInformation.swift */; };
 		36EE2154292027DB009CFA6B /* String+FileSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE2153292027DB009CFA6B /* String+FileSize.swift */; };
+		36EE2162292097B8009CFA6B /* ImageDiskCache.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36EE2160292097B8009CFA6B /* ImageDiskCache.xcdatamodeld */; };
+		36EE216429209831009CFA6B /* ImageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE216329209831009CFA6B /* ImageFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		365C85A229209A76001E600D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		365C85A82920A1C4001E600D /* UIImageTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageTransformer.swift; sourceTree = "<group>"; };
+		365C85AA2920C765001E600D /* CacheAsyncImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAsyncImageViewModel.swift; sourceTree = "<group>"; };
 		36623829291DEDF700ED1DE0 /* Befamily-Messenger-Description-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Befamily-Messenger-Description-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3662382C291DEDF700ED1DE0 /* Befamily_Messenger_Description_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Befamily_Messenger_Description_AppApp.swift; sourceTree = "<group>"; };
 		3662382E291DEDF700ED1DE0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -44,6 +52,8 @@
 		36EE214D292010F5009CFA6B /* CacheAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAsyncImage.swift; sourceTree = "<group>"; };
 		36EE214F292026DD009CFA6B /* AppInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInformation.swift; sourceTree = "<group>"; };
 		36EE2153292027DB009CFA6B /* String+FileSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FileSize.swift"; sourceTree = "<group>"; };
+		36EE2161292097B8009CFA6B /* ImageDiskCache.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageDiskCache.xcdatamodel; sourceTree = "<group>"; };
+		36EE216329209831009CFA6B /* ImageFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		365C85AC2920D309001E600D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				365C85AA2920C765001E600D /* CacheAsyncImageViewModel.swift */,
+				36EE213A291F9250009CFA6B /* AppStorePreviewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		365C85AD2920D32D001E600D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				36EE2136291F5FB7009CFA6B /* AppStorePreviewService.swift */,
+				365C85A229209A76001E600D /* CoreDataManager.swift */,
+				365C85A82920A1C4001E600D /* UIImageTransformer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		36623820291DEDF700ED1DE0 = {
 			isa = PBXGroup;
 			children = (
@@ -77,14 +106,15 @@
 		3662382B291DEDF700ED1DE0 /* Befamily-Messenger-Description-App */ = {
 			isa = PBXGroup;
 			children = (
+				365C85AD2920D32D001E600D /* Services */,
+				365C85AC2920D309001E600D /* ViewModels */,
 				36EE2144291FD74B009CFA6B /* Views */,
 				36EE213F291FB15D009CFA6B /* Extensions */,
 				36EE213C291F964D009CFA6B /* Models */,
 				3662382C291DEDF700ED1DE0 /* Befamily_Messenger_Description_AppApp.swift */,
 				36623830291DEDF900ED1DE0 /* Assets.xcassets */,
 				36623832291DEDF900ED1DE0 /* Preview Content */,
-				36EE2136291F5FB7009CFA6B /* AppStorePreviewService.swift */,
-				36EE213A291F9250009CFA6B /* AppStorePreviewViewModel.swift */,
+				36EE2160292097B8009CFA6B /* ImageDiskCache.xcdatamodeld */,
 			);
 			path = "Befamily-Messenger-Description-App";
 			sourceTree = "<group>";
@@ -100,6 +130,7 @@
 		36EE213C291F964D009CFA6B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				36EE216329209831009CFA6B /* ImageFile.swift */,
 				36EE2138291F911E009CFA6B /* AppStorePreviews.swift */,
 			);
 			path = Models;
@@ -209,16 +240,21 @@
 				36EE2148291FDAE2009CFA6B /* AppDetailDescription.swift in Sources */,
 				36EE2143291FD61A009CFA6B /* PreviewHeader.swift in Sources */,
 				36EE2154292027DB009CFA6B /* String+FileSize.swift in Sources */,
+				365C85A329209A76001E600D /* CoreDataManager.swift in Sources */,
 				36EE214C291FDDA9009CFA6B /* HorizontalPreviewImage.swift in Sources */,
 				36EE2146291FD79F009CFA6B /* NewFunctionDescription.swift in Sources */,
 				36EE214E292010F5009CFA6B /* CacheAsyncImage.swift in Sources */,
 				3662382F291DEDF700ED1DE0 /* MainView.swift in Sources */,
 				3662382D291DEDF700ED1DE0 /* Befamily_Messenger_Description_AppApp.swift in Sources */,
 				36EE214A291FDD5C009CFA6B /* HorizontalSummary.swift in Sources */,
+				365C85AB2920C765001E600D /* CacheAsyncImageViewModel.swift in Sources */,
 				36EE2137291F5FB7009CFA6B /* AppStorePreviewService.swift in Sources */,
 				36EE2150292026DD009CFA6B /* AppInformation.swift in Sources */,
 				36EE2141291FB170009CFA6B /* String+RelativeDate.swift in Sources */,
+				36EE216429209831009CFA6B /* ImageFile.swift in Sources */,
+				36EE2162292097B8009CFA6B /* ImageDiskCache.xcdatamodeld in Sources */,
 				36EE2139291F911E009CFA6B /* AppStorePreviews.swift in Sources */,
+				365C85A92920A1C4001E600D /* UIImageTransformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +476,19 @@
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		36EE2160292097B8009CFA6B /* ImageDiskCache.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				36EE2161292097B8009CFA6B /* ImageDiskCache.xcdatamodel */,
+			);
+			currentVersion = 36EE2161292097B8009CFA6B /* ImageDiskCache.xcdatamodel */;
+			path = ImageDiskCache.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 36623821291DEDF700ED1DE0 /* Project object */;
 }

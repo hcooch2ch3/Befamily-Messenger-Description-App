@@ -29,20 +29,13 @@ struct HorizontalPreviewImage: View {
                         ForEach(0..<imageCount, id: \.self) {
                             if $0 < viewModel.previewImageURLs.count {
                                 let imageURL = viewModel.previewImageURLs[$0]
-                                CacheAsyncImage(url: imageURL) { phase in
-                                    switch phase {
-                                    case .success(let previewImage):
-                                        previewImage
-                                            .onAppear {
-                                                withAnimation {
-                                                    proxy.scrollTo(imageCount-1, anchor: .leading)
-                                                }
-                                            }
-                                    default:
-                                        EmptyView()
+                                CacheAsyncImage(url: imageURL)
+                                .id($0)
+                                .onAppear {
+                                    withAnimation {
+                                        proxy.scrollTo(imageCount-1, anchor: .leading)
                                     }
                                 }
-                                .id($0)
                             }
                         }
                     }

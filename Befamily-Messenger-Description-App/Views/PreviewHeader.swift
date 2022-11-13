@@ -13,14 +13,7 @@ struct PreviewHeader: View {
     var body: some View {
         HStack {
             if let iconImageURL = viewModel.iconImageURL {
-                    CacheAsyncImage(url: iconImageURL) { phase in
-                    switch phase {
-                    case .success(let iconImage):
-                        iconImage
-                    default:
-                        EmptyView()
-                    }
-                }
+                CacheAsyncImage(url: iconImageURL) 
             }
             VStack {
                 Text(viewModel.title)

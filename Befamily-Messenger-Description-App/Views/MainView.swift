@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    @ObservedObject var viewModel = AppStorePreviewViewModel()
+    @StateObject var viewModel = AppStorePreviewViewModel()
     
     var body: some View {
         ScrollView {
