@@ -13,28 +13,34 @@ struct PreviewHeader: View {
     var body: some View {
         HStack {
             if let iconImageURL = viewModel.iconImageURL {
-                CacheAsyncImage(url: iconImageURL) 
+                CacheAsyncImage(url: iconImageURL)
+                    .cornerRadius(15)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 15)
+                            .stroke(.gray, lineWidth: 1)
+                    )
             }
-            VStack {
+            VStack(alignment: .leading) {
                 Text(viewModel.title)
+                    .font(.headline)
                 Text(viewModel.sellerName)
+                    .font(.subheadline)
                 HStack {
-                    Button {
-                        print("클릭")
-                    } label: {
+                    Button {} label: {
                         Text("받기")
                     }
                     .buttonStyle(.borderedProminent)
                     .buttonBorderShape(.capsule)
                     Spacer()
-                    Button {
-                        print("클릭")
-                    } label: {
+                    Button {} label: {
                         Image(systemName: "square.and.arrow.up")
                     }
                 }
             }
+            .padding(.leading, 10)
+            .padding(.trailing, 20)
         }
+        .padding(.bottom, 10)
     }
 }
 
