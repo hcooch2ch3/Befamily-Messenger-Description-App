@@ -37,13 +37,12 @@ class AppStorePreviewViewModel: ObservableObject {
     
     func getAppStorePreviews() {
         appStorePreviewService.fetchAppStorePreviews()?.sink { (dataResponse) in
-            if dataResponse.error != nil {
-                debugPrint(dataResponse.error!)
-            } else {
-                self.appStorePreviews = dataResponse.value
-                self.setProperties()
-                print(self.appStorePreviews)
+            if let error = dataResponse.error {
+                debugPrint(error)
+                return
             }
+            self.appStorePreviews = dataResponse.value
+            self.setProperties()
         }.store(in: &cancellableSet)
     }
     

@@ -30,6 +30,6 @@ struct AppDetailDescription: View {
 
 struct AppDetailDescription_Previews: PreviewProvider {
     static var previews: some View {
-        AppDetailDescription()
+        AppDetailDescription(viewModel: AppStorePreviewViewModel())
     }
 }

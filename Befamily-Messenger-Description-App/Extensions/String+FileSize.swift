@@ -12,6 +12,7 @@ extension String {
         guard let size = Double(self) else { return "" }
         let mbSize = size / (1024*1024)
         let kbSize = size / (1024)
+        
         var result = ""
         if mbSize < 1 {
             result += String(format: "%.1f", kbSize) + "KB"
