@@ -12,27 +12,35 @@ struct NewFunctionDescription: View {
     @State var lineLimit: Int? = 3
     
     var body: some View {
-        HStack {
-            Text("새로운 기능")
-            Spacer()
-            Text("버전 기록")
-        }
-        HStack {
-            Text("버전 \(viewModel.version)")
-            Spacer()
-            Text(viewModel.versionDate)
-        }
-        HStack(alignment: .bottom) {
-            Text(viewModel.versionDescription)
-                .lineLimit(lineLimit)
-            if lineLimit == 3 {
+        VStack(spacing: 5) {
+            HStack {
+                Text("새로운 기능")
+                    .font(.headline)
                 Spacer()
-                Button {
-                    lineLimit = nil
-                } label: {
-                    Text("더 보기")
+                Button {} label: {
+                    Text("버전 기록")
                 }
             }
+            HStack {
+                Text("버전 \(viewModel.version)")
+                Spacer()
+                Text(viewModel.versionDate)
+            }
+            .font(.footnote)
+            HStack(alignment: .bottom) {
+                Text(viewModel.versionDescription)
+                    .lineLimit(lineLimit)
+                if lineLimit == 3 {
+                    Spacer()
+                    Button {
+                        lineLimit = nil
+                    } label: {
+                        Text("더 보기")
+                            .font(.footnote)
+                    }
+                }
+            }
+            .font(.body)
         }
     }
 }
