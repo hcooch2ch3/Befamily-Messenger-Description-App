@@ -20,6 +20,7 @@ struct HorizontalPreviewImage: View {
                     }
                 } label: {
                     Text("미리보기")
+                        .font(.headline)
                 }
                 Spacer()
             }
@@ -30,17 +31,21 @@ struct HorizontalPreviewImage: View {
                             if $0 < viewModel.previewImageURLs.count {
                                 let imageURL = viewModel.previewImageURLs[$0]
                                 CacheAsyncImage(url: imageURL)
-                                .id($0)
-                                .onAppear {
-                                    withAnimation {
-                                        proxy.scrollTo(imageCount-1, anchor: .leading)
+                                    .frame(width: 300)
+                                    .cornerRadius(25)
+                                    .id($0)
+                                    .onAppear {
+                                        withAnimation {
+                                            proxy.scrollTo(imageCount-1, anchor: .leading)
+                                        }
                                     }
-                                }
                             }
                         }
                     }
+                    .padding(.leading, 20)
                 }
             }
+            .padding(.horizontal, -20)
         }
     }
 }
